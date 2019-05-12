@@ -1,6 +1,6 @@
 ﻿let rec fibo = function
-| 0 -> 0
-| 1 -> 1
+| 1 -> 0
+| 2 -> 1
 | n -> fibo(n-1) + fibo(n-2)
 
 let rec sum = function
