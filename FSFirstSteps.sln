@@ -11,6 +11,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "3_Func_Expr_Temp_6_5", "3_F
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "4_Recursion_7_1", "4_Recursion_7_1\4_Recursion_7_1.fsproj", "{75F935DC-E448-4F67-A600-C213301C7C24}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "5_Predicate_16", "5_Predicate_16\5_Predicate_16.fsproj", "{914F6D0F-DC1B-458C-A21C-BF4D38D1B9D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{75F935DC-E448-4F67-A600-C213301C7C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75F935DC-E448-4F67-A600-C213301C7C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75F935DC-E448-4F67-A600-C213301C7C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914F6D0F-DC1B-458C-A21C-BF4D38D1B9D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914F6D0F-DC1B-458C-A21C-BF4D38D1B9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914F6D0F-DC1B-458C-A21C-BF4D38D1B9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914F6D0F-DC1B-458C-A21C-BF4D38D1B9D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
