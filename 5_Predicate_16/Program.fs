@@ -5,4 +5,8 @@ let notDivisible (n, m) = m % n = 0
 let rec prime = function
 | 1 -> false
 | 2 -> true
-// todo написать субфункцию n -> subrec(n)
+| n -> subrec(n, n-1)// todo написать субфункцию n -> subrec(n)
+
+let rec subrec = function
+|
+|
