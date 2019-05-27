@@ -13,6 +13,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "4_Recursion_7_1", "4_Recurs
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "5_Predicate_16", "5_Predicate_16\5_Predicate_16.fsproj", "{914F6D0F-DC1B-458C-A21C-BF4D38D1B9D3}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "6_Char_n_Strings_17_4", "6_Char_n_Strings_17_4\6_Char_n_Strings_17_4.fsproj", "{3CF516EE-6D52-4FBD-83FD-DAF3CAFD8D1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{914F6D0F-DC1B-458C-A21C-BF4D38D1B9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{914F6D0F-DC1B-458C-A21C-BF4D38D1B9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{914F6D0F-DC1B-458C-A21C-BF4D38D1B9D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CF516EE-6D52-4FBD-83FD-DAF3CAFD8D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF516EE-6D52-4FBD-83FD-DAF3CAFD8D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF516EE-6D52-4FBD-83FD-DAF3CAFD8D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF516EE-6D52-4FBD-83FD-DAF3CAFD8D1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
