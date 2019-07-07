@@ -1,5 +1,7 @@
 ﻿// 21.1
-// let curry f =
+let curry f =
+    fun g x -> fun h y -> f x y
 
 // 21.2
-// let uncurry f =
+let uncurry g =
+    fun f x y -> fun h y -> g x
