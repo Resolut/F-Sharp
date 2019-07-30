@@ -13,18 +13,23 @@ let (.-.) x y =
 
     let c =  
         if (c1 >= c2) then (c1-c2) % 12
-        else c1 - c2
+        else 0
 
     let s = 
         if (s1 >= s2) && (c1 >= c2) then (s1 - s2 + (c1 - c2) / 12) % 20
         elif (s1 >= s2) && (c1 < c2) then (s1-s2) % 20
-        elif (s1 < s2) && (c1 >= c2) then (s1 - s2) + (c1 - c2) / 12 
-        else s1 - s2
+        elif (s1 < s2) && (c1 >= c2) then (c1 - c2) / 12 
+        else 0
 
     let g = 
-        if (s >= 0) && (c >= 0) then g1 - g2 + (s1 - s2 + (c1 - c2) / 12) / 20
-        elif (s >= 0) && (c < 0) then g1 - g2 + (s1 - s2) / 20
-        else g1 - g2
+        if (g1 >= g2) && (s1 >= s2) && (c1 >= c2) then (g1 - g2) + (s1 - s2 + (c1 - c2) / 12) / 20
+        elif (g1 >= g2) && (s1 >= s2) && (c1 < c2) then (g1 - g2) + (s1 - s2) / 20
+        elif (g1 >= g2) && (s1 < s2) && (c1 >= c2) then (g1 - g2) + (c1 - c2) / 12 / 20
+        elif (g1 >= g2) && (s1 < s2) && (c1 <  c2) then g1 - g2
+        elif (g1 < g2) && (s1 >= s2) && (c1 >=  c2) then (s1 - s2 + (c1 - c2) / 12) / 20
+        elif (g1 < g2) && (s1 >= s2) && (c1 <  c2) then (s1 - s2) / 20
+        elif (g1 < g2) && (s1 < s2) && (c1 >=  c2) then (c1 - c2) / 12 / 20
+        else 0
     (g, s, c)
 
 // 23.4.2 Арифметические операции с комплексными числами
