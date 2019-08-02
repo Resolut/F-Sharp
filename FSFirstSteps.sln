@@ -23,7 +23,7 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "9_Tuples_23", "9_Tuples_23\
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "10_Records_24", "10_Records_24\10_Records_24.fsproj", "{B1D59ADA-FCF9-442B-ACA1-A918A05661A8}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "11_Discriminated_Unions_27", "10_Unions_27\11_Discriminated_Unions_27.fsproj", "{26B87239-AFB1-450A-9B81-416CCC138D66}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "11_Discriminated_Unions_27", "11_Discriminated_Unions_27\11_Discriminated_Unions_27.fsproj", "{26B87239-AFB1-450A-9B81-416CCC138D66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
