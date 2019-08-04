@@ -3,31 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "1_Output_4_3", "1_Output_4_3\1_Output_4_3.fsproj", "{9C5B4F73-0277-4D9A-AA19-376A661ABF7C}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "1_Output", "1_Output_4_3\1_Output.fsproj", "{9C5B4F73-0277-4D9A-AA19-376A661ABF7C}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "2_Declare_n_Definite_5_5", "2_Declare_n_Definite_5_5\2_Declare_n_Definite_5_5.fsproj", "{C1542320-6439-4BA2-8BDD-FD67D2D89BA6}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "2_Declare_n_Definite", "2_Declare_n_Definite_5_5\2_Declare_n_Definite.fsproj", "{C1542320-6439-4BA2-8BDD-FD67D2D89BA6}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "3_Func_Expr_Temp_6_5", "3_Func_Expr_Temp_6_5\3_Func_Expr_Temp_6_5.fsproj", "{B32B8849-4905-4397-920F-F5AA08E3B2C5}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "3_Func_Expr_Temp", "3_Func_Expr_Temp_6_5\3_Func_Expr_Temp.fsproj", "{B32B8849-4905-4397-920F-F5AA08E3B2C5}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "4_Recursion_7_1", "4_Recursion_7_1\4_Recursion_7_1.fsproj", "{75F935DC-E448-4F67-A600-C213301C7C24}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "4_Recursion", "4_Recursion_7_1\4_Recursion.fsproj", "{75F935DC-E448-4F67-A600-C213301C7C24}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "5_Predicate_16", "5_Predicate_16\5_Predicate_16.fsproj", "{914F6D0F-DC1B-458C-A21C-BF4D38D1B9D3}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "5_Predicate", "5_Predicate_16\5_Predicate.fsproj", "{914F6D0F-DC1B-458C-A21C-BF4D38D1B9D3}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "6_Char_n_Strings_17_4", "6_Char_n_Strings_17_4\6_Char_n_Strings_17_4.fsproj", "{3CF516EE-6D52-4FBD-83FD-DAF3CAFD8D1F}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "6_Char_n_Strings", "6_Char_n_Strings_17_4\6_Char_n_Strings.fsproj", "{3CF516EE-6D52-4FBD-83FD-DAF3CAFD8D1F}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "7_Composition_n_Currying_20_3", "7_Composition_n_Currying_20_3\7_Composition_n_Currying_20_3.fsproj", "{2C9BCE54-FC2C-4DF5-8CE8-A6CBDF264949}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "7_Composition_n_Currying", "7_Composition_n_Currying_20_3\7_Composition_n_Currying.fsproj", "{2C9BCE54-FC2C-4DF5-8CE8-A6CBDF264949}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "8_Closures_21", "8_Closures_21\8_Closures_21.fsproj", "{AF915AD2-4253-4C0F-AC2F-D8E5C1FA35E7}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "8_Closures", "8_Closures_21\8_Closures.fsproj", "{AF915AD2-4253-4C0F-AC2F-D8E5C1FA35E7}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "9_Tuples_23", "9_Tuples_23\9_Tuples_23.fsproj", "{7729C8B0-FD28-405B-AC9D-975F29846C12}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "9_Tuples", "9_Tuples_23\9_Tuples.fsproj", "{7729C8B0-FD28-405B-AC9D-975F29846C12}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "10_Records_24", "10_Records_24\10_Records_24.fsproj", "{B1D59ADA-FCF9-442B-ACA1-A918A05661A8}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "10_Records", "10_Records_24\10_Records.fsproj", "{B1D59ADA-FCF9-442B-ACA1-A918A05661A8}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "11_Discriminated_Unions_27", "11_Discriminated_Unions_27\11_Discriminated_Unions_27.fsproj", "{26B87239-AFB1-450A-9B81-416CCC138D66}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "11_Discriminated_Unions", "11_Discriminated_Unions_27\11_Discriminated_Unions.fsproj", "{26B87239-AFB1-450A-9B81-416CCC138D66}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "12_Lists_34", "12_Lists_34\12_Lists_34.fsproj", "{DB6F3BB2-0B89-4571-962F-9CE49A8A7534}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "12_Lists_part_1", "12_Lists_34\12_Lists_part_1.fsproj", "{DB6F3BB2-0B89-4571-962F-9CE49A8A7534}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "13_Lists_part_2_39", "13_Lists_part_2_39\13_Lists_part_2_39.fsproj", "{82E43468-737C-4AF4-9D7A-11A80F0FE91D}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "13_Lists_part_2", "13_Lists_part_2_39\13_Lists_part_2.fsproj", "{82E43468-737C-4AF4-9D7A-11A80F0FE91D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,15 +5,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>c1542320-6439-4ba2-8bdd-fd67d2d89ba6</ProjectGuid>
+    <ProjectGuid>db6f3bb2-0b89-4571-962f-9ce49a8a7534</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_2_Declare_n_Definite_5_5</RootNamespace>
-    <AssemblyName>_2_Declare_n_Definite_5_5</AssemblyName>
+    <RootNamespace>_12_Lists_34</RootNamespace>
+    <AssemblyName>_12_Lists_34</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <UseStandardResourceNames>true</UseStandardResourceNames>
     <WarningsAsErrors>3239;$(WarningsAsErrors)</WarningsAsErrors>
-    <Name>2_Declare_n_Definite_5_5</Name>
+    <Name>12_Lists_part_1</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
-      <HintPath>..\FSFirstSteps\packages\FSharp.Core.4.6.2\lib\net45\FSharp.Core.dll</HintPath>
+      <HintPath>..\packages\FSharp.Core.4.6.2\lib\net45\FSharp.Core.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />

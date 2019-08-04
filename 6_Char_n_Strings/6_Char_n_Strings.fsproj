@@ -5,15 +5,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>7729c8b0-fd28-405b-ac9d-975f29846c12</ProjectGuid>
+    <ProjectGuid>3cf516ee-6d52-4fbd-83fd-daf3cafd8d1f</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_9_Tuples_23</RootNamespace>
-    <AssemblyName>_9_Tuples_23</AssemblyName>
+    <RootNamespace>_6_Char_n_Strings_17_4</RootNamespace>
+    <AssemblyName>_6_Char_n_Strings_17_4</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <UseStandardResourceNames>true</UseStandardResourceNames>
     <WarningsAsErrors>3239;$(WarningsAsErrors)</WarningsAsErrors>
-    <Name>9_Tuples_23</Name>
+    <Name>6_Char_n_Strings</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

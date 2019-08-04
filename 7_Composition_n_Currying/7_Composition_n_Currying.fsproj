@@ -5,15 +5,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>b1d59ada-fcf9-442b-aca1-a918a05661a8</ProjectGuid>
+    <ProjectGuid>2c9bce54-fc2c-4df5-8ce8-a6cbdf264949</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_10_Records_24</RootNamespace>
-    <AssemblyName>_10_Records_24</AssemblyName>
+    <RootNamespace>_7_Composition_n_Currying_20_3</RootNamespace>
+    <AssemblyName>_7_Composition_n_Currying_20_3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <UseStandardResourceNames>true</UseStandardResourceNames>
     <WarningsAsErrors>3239;$(WarningsAsErrors)</WarningsAsErrors>
-    <Name>10_Records_24</Name>
+    <Name>7_Composition_n_Currying</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

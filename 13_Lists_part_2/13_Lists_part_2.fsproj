@@ -5,15 +5,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>3cf516ee-6d52-4fbd-83fd-daf3cafd8d1f</ProjectGuid>
+    <ProjectGuid>82e43468-737c-4af4-9d7a-11a80f0fe91d</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_6_Char_n_Strings_17_4</RootNamespace>
-    <AssemblyName>_6_Char_n_Strings_17_4</AssemblyName>
+    <RootNamespace>_13_Lists_part_2_39</RootNamespace>
+    <AssemblyName>_13_Lists_part_2_39</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <UseStandardResourceNames>true</UseStandardResourceNames>
     <WarningsAsErrors>3239;$(WarningsAsErrors)</WarningsAsErrors>
-    <Name>6_Char_n_Strings_17_4</Name>
+    <Name>13_Lists_part_2</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
