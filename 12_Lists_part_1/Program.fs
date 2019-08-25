@@ -14,6 +14,6 @@ let rec dnto = function
 let rec evenn n = 
     let rec count = function 
         | (num, acc) when acc = n -> [] 
-        | (num, acc) when (num % 2 = 0) -> num :: count (num + 1,acc + 1)  
+        | (num, acc) when (num % 2 = 0) -> num :: count (num + 1, acc + 1)  
         | (num, acc) -> count (num + 1, acc) 
     count (0, 0)
