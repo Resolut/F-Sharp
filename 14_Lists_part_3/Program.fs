@@ -31,7 +31,7 @@ let rec intersect (xs1, xs2) =
     match xs1, xs2 with
     | head :: tail, head2 :: t2 when head = head2 -> head :: intersect (tail, t2) 
     | head :: tail, head2 :: t2 when head > head2 -> intersect (tail, xs2)
-    | head :: tail, head2 :: t2 -> intersect (xs1, t2)  
+    | head :: tail, head2 :: t2 when head < head2 -> intersect (xs1, t2)  
     | _, _ -> []
 
 //let rec compare (list, elem) =
