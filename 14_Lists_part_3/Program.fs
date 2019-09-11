@@ -27,20 +27,14 @@ let rec insert (xs, n) =
     sub xs   
 
 // 40.2.3 - функция intersect: int list * int list -> int list находит общие элементы в обоих списках, включая повторяющиеся.
-let rec intersect (xs1, xs2) = 
+let rec iter (xs1, xs2, list) = 
     match xs1, xs2 with
-    | head :: tail, head2 :: t2 when head = head2 -> head :: intersect (tail, t2) 
-    | head :: tail, head2 :: t2 when head > head2 -> intersect (tail, xs2)
-    | head :: tail, head2 :: t2 when head < head2 -> intersect (xs1, t2)  
-    | _, _ -> []
+    | head :: tail, head2 :: t2 when head = head2 -> head :: iter (tail, t2, list) 
+    | head :: tail, head2 :: t2 when head < head2 -> iter (tail, xs2, list)
+    | head :: tail, head2 :: t2 when head > head2 -> iter (xs1, t2, list)
+    | _, _ -> list
 
-//let rec compare (list, elem) =
-//    match list with
-//    | [] -> []
-//    | head :: tail when head = elem -> [elem] :: compare 
-//    | head :: tail -> compare (tail, elem)
-
-//let rec intersect2 (xs1:int list, xs2:int list) = compare (xs1, xs2.Head) @ compare(xs2, xs1.Head)
+let rec intersect (xs1, xs2) =  iter (xs1, xs2, []) 
 
 // 40.2.4 - функция plus: int list * int list -> int list формирует список, объединяющий все элементы входных списков, включая повторяющиеся.
 let rec plus (xs1, xs2) = xs1 @ xs2
@@ -64,6 +58,7 @@ let rec plus (xs1, xs2) = xs1 @ xs2
 // vvvvvv Вывод результатов работы функций vvvvvv
 
 // 40.1 функция sum
+
 //let isEven = function 
 //| elem -> elem % 2 = 0
 
@@ -74,19 +69,28 @@ let rec plus (xs1, xs2) = xs1 @ xs2
 //printfn "%A" (sum (isOdd, [1;1;2;3;4;5;]))
 
 // 40.2.1 функция count
+
 //printfn "%A" (count ([1;2;3;4],5))
 
 // 40.2.2 - функция insert
+
 //printfn "%A" (insert ([1;2;3;4], 5))
 //printfn "%A" (insert ([1;2;3;4], 0))
 //printfn "%A" (insert ([1;2;3;4], 1))
 //printfn "%A" (insert ([1;2;3;3;6], 4))
 //printfn "%A" (insert ([], 4))
-printfn "%A" (intersect ([4;5;6;7], [1;2;3;4]))
-printfn "%A" (intersect ([4;5;6;7], [2;3;4;5]))
-printfn "%A" (intersect ([4;5;6;7], [4;5]))
-printfn "%A" (intersect ([6;7], [4;5;6;7]))
-printfn "%A" (intersect ([4;5;6;7], [4;5;6;7]))
+
+// 40.2.3 - функция intersect
+
+//printfn "%A" (intersect ([5;6;7], [1;2;3;4]))
+//printfn "%A" (intersect ([4;5;6;7], [1;2;3;4]))
+//printfn "%A" (intersect ([4;5;6;7], [2;3;4;5]))
+//printfn "%A" (intersect ([4;5;6;7], [4;5]))
+//printfn "%A" (intersect ([6;7], [4;5;6;7]))
+//printfn "%A" (intersect ([4;5;6;7], [4;5;6;7]))
+
+// 40.2.4 - функция plus
+
 //printfn "%A" (plus ([5;6;7;8;9], [1;2;3;4]))
 
 System.Console.ReadKey |> ignore
