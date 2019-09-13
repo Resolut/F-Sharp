@@ -27,23 +27,47 @@ let rec insert (xs, n) =
     sub xs   
 
 // 40.2.3 - функция intersect: int list * int list -> int list находит общие элементы в обоих списках, включая повторяющиеся.
-let rec iter (xs1, xs2, list) = 
+let rec iter_intersect (xs1, xs2, list) = 
     match xs1, xs2 with
-    | head :: tail, head2 :: t2 when head = head2 -> head :: iter (tail, t2, list) 
-    | head :: tail, head2 :: t2 when head < head2 -> iter (tail, xs2, list)
-    | head :: tail, head2 :: t2 when head > head2 -> iter (xs1, t2, list)
+    | head :: tail, head2 :: t2 when head = head2 -> head :: iter_intersect (tail, t2, list) 
+    | head :: tail, head2 :: t2 when head < head2 -> iter_intersect (tail, xs2, list)
+    | head :: tail, head2 :: t2 when head > head2 -> iter_intersect (xs1, t2, list)
     | _, _ -> list
 
-let rec intersect (xs1, xs2) =  iter (xs1, xs2, []) 
+let rec intersect (xs1, xs2) =  iter_intersect (xs1, xs2, []) 
 
 // 40.2.4 - функция plus: int list * int list -> int list формирует список, объединяющий все элементы входных списков, включая повторяющиеся.
-let rec plus (xs1, xs2) = xs1 @ xs2
+let rec iter_plus (xs1, xs2, list) = 
+    match xs1, xs2 with
+    | head :: tail, head2 :: t2 when head < head2 -> head :: iter_plus (tail, xs2, list)
+    | head :: tail, head2 :: t2 when head = head2 -> head :: head2 :: iter_plus (tail, t2, list) 
+    | head :: tail, head2 :: t2 when head > head2 -> head2 :: iter_plus (xs1, t2, list)
+    | [], xs2 -> xs2 @ list
+    | xs1, [] -> xs1 @ list
+    | _, _ -> list
+
+let rec plus (xs1, xs2) = iter_plus (xs1, xs2, [])
 
 // 40.2.5 - функция minus: int list * int list -> int list, возвращает список, содержащий элементы первого списка за исключением элементов второго списка (элементы, одинаковые по значению, считаются разными).
-//let rec minus (xs1, xs2) = ...
+let rec iter_minus (xs1, xs2, list) = 
+    match xs1, xs2 with
+    | head :: tail, head2 :: t2 when head < head2 -> head :: iter_minus (tail, xs2, list)
+    | head :: tail, head2 :: t2 when head = head2 -> iter_minus (tail, t2, list) 
+    | head :: tail, head2 :: t2 when head > head2 -> iter_minus (xs1, t2, list)
+    | head :: tail, [] -> head :: tail @ list
+    | _, _ -> list
+
+let rec minus (xs1, xs2) = iter_minus (xs1, xs2, [])
+
 
 // 40.3.1 - функция smallest: int list -> int возвращает наименьший элемент непустого списка.
-//let rec smallest = ...
+let rec smallest = 
+    let rec iter list elem = 
+        match list with
+        | [] -> elem
+        | head :: tail when head < elem -> iter tail head
+        | head:: tail -> iter list elem
+    iter lst 0
 
 // 40.3.2 - функция delete: int * int list -> int list удаляет из списка первое вхождение заданного элемента (если он имеется).
 //let rec delete (n, xs) = ...
@@ -91,6 +115,24 @@ let rec plus (xs1, xs2) = xs1 @ xs2
 
 // 40.2.4 - функция plus
 
-//printfn "%A" (plus ([5;6;7;8;9], [1;2;3;4]))
+//printfn "%A" (plus ([1; 2; 3; 4], [5; 6; 7; 8; 9]))
+//printfn "%A" (plus ([5; 6; 7; 8; 9], [1; 2; 3; 4]))
+//printfn "%A" (plus ([1; 2; 3; 4], [1; 2; 3; 4]))
+//printfn "%A" (plus ([1; 2; 3; 4], []))
+//printfn "%A" (plus ([], [5;5;6;7]))
+//printfn "%A" (plus ([1; 2; 3; 4], [2; 2; 6]))
+//printfn "%A" (plus ([], []))
+
+// 40.2.4 - функция minus
+
+//printfn "%A" (minus ([6; 7], [1; 6]))
+//printfn "%A" (minus ([1; 2; 3; 4], [1; 2; 3; 4]))
+//printfn "%A" (minus ([1; 2; 3; 4; 4; 4], [1; 2; 3; 4]))
+//printfn "%A" (minus ([1; 2; 3; 4; 4; 4], [4; 5]))
+//printfn "%A" (minus ([1; 2; 3; 4], [4]))
+//printfn "%A" (minus ([1; 2; 3; 4], [5; 6; 7; 8; 9]))
+//printfn "%A" (minus ([1; 2; 3; 4], [3; 6]))
+//printfn "%A" (minus ([1; 2; 3; 4; 5], [3; 4; 5]))
+//printfn "%A" (minus ([1; 2; 3; 4; 5], []))
 
 System.Console.ReadKey |> ignore
