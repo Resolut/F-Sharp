@@ -83,7 +83,10 @@ let rec delete (n, xs) =
 
 
 // 40.3.3 - функция sort использует предыдущие функции и сортирует входной список так, что на выходе получается слабо восходящий список.
-//let rec sort = ...
+let rec sort = function
+| [] -> []
+| list -> smallest (list) :: sort (delete (smallest (list), list))
+
 
 // 40.4 - функция revrev
 //let rec revrev = ...
@@ -151,9 +154,19 @@ let rec delete (n, xs) =
 //printfn "%A" (smallest [1; 6; 184; 2; 27; 0])
 //printfn "%A" (smallest [3; 6; 184; 5; 27; 3])
 
-printfn "%A" (delete (5, [1; 2; 3; 4; 5; 5; 7]))
-printfn "%A" (delete (5, [40; 30; 5; 5; 7; 5]))
-printfn "%A" (delete (5, [50; 40; 30; 20; 10; 0]))
+// 40.3.2 - функция delete
 
+//printfn "%A" (delete (5, [1; 2; 3; 4; 5; 5; 7]))
+//printfn "%A" (delete (5, [40; 30; 5; 5; 7; 5]))
+//printfn "%A" (delete (5, [50; 40; 30; 20; 10; 0]))
+
+// 40.3.3 - функция sort
+printfn "%A" (sort [])
+printfn "%A" (sort [1])
+printfn "%A" (sort [50; 40; 30; 20; 10; 0])
+printfn "%A" (sort [22; 18; 25; 19; 24; 20; 23; 21])
+printfn "%A" (sort [8; -8; 9; -9; 7; -7; 0; -1; 1])
+
+// 40.4 - функция revrev
 
 System.Console.ReadKey |> ignore
