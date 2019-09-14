@@ -61,16 +61,26 @@ let rec minus (xs1, xs2) = iter_minus (xs1, xs2, [])
 
 
 // 40.3.1 - функция smallest: int list -> int возвращает наименьший элемент непустого списка.
-let rec smallest = 
-    let rec iter list elem = 
-        match list with
-        | [] -> elem
-        | head :: tail when head < elem -> iter tail head
-        | head:: tail -> iter list elem
-    iter lst 0
+let rec smallest = function
+| [] -> failwith "Невозможно определить наименьший элемент пустого списка"
+| head :: tail ->
+    let rec compare min xs = 
+        match xs with
+        | [] -> min
+        | head :: tail when head < min -> compare head tail 
+        | head :: tail -> compare min tail 
+    compare head tail
+    
 
 // 40.3.2 - функция delete: int * int list -> int list удаляет из списка первое вхождение заданного элемента (если он имеется).
-//let rec delete (n, xs) = ...
+let rec delete (n, xs) = 
+    let rec sub_delete xs =
+        match xs with
+        | [] -> []
+        | head :: tail when head = n -> tail
+        | head :: tail -> head :: sub_delete tail
+    sub_delete xs
+
 
 // 40.3.3 - функция sort использует предыдущие функции и сортирует входной список так, что на выходе получается слабо восходящий список.
 //let rec sort = ...
@@ -134,5 +144,16 @@ let rec smallest =
 //printfn "%A" (minus ([1; 2; 3; 4], [3; 6]))
 //printfn "%A" (minus ([1; 2; 3; 4; 5], [3; 4; 5]))
 //printfn "%A" (minus ([1; 2; 3; 4; 5], []))
+
+// 40.3.1 - функция smallest
+
+//printfn "%A" (smallest [1; 6; 184; 2;-11 ; -303; 27; 0])
+//printfn "%A" (smallest [1; 6; 184; 2; 27; 0])
+//printfn "%A" (smallest [3; 6; 184; 5; 27; 3])
+
+printfn "%A" (delete (5, [1; 2; 3; 4; 5; 5; 7]))
+printfn "%A" (delete (5, [40; 30; 5; 5; 7; 5]))
+printfn "%A" (delete (5, [50; 40; 30; 20; 10; 0]))
+
 
 System.Console.ReadKey |> ignore
