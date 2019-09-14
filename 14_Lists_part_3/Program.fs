@@ -84,7 +84,6 @@ let rec sort = function
 | [] -> []
 | list -> smallest (list) :: sort (delete (smallest (list), list))
 
-
 // 40.4 - функция revrev: получает на вход список списков, и перевёртывает как порядок вложенных списков, так и порядок элементов внутри каждого вложенного списка.
 let rec revrev = function
 | [] -> []
