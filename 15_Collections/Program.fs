@@ -1,12 +1,4 @@
-﻿// 41.4.1
-let list_filter1 f xs = 
-    let rec iter xs = 
-        match xs with
-        | [] -> []
-        | head :: tail when f head = true -> head :: iter tail 
-        | head :: tail -> iter tail 
-    iter xs
-    
+﻿// 41.4.1  
 let list_filter f xs = List.foldBack (fun head xs -> if f head then head :: xs else xs) xs []
 
 printfn "%A" (list_filter(fun x -> x > 0) [-1; 2; 3])
