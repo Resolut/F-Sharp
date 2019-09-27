@@ -1,4 +1,4 @@
-﻿// 40.1 - функция sum: (int -> bool) * int list - > int
+﻿// 40.1 - функция sum: (int -> bool) * int list -> int
 // возвращает сумму элементов списка xs, для которых истинен предикат p.
 let rec sum (p, xs) = 
     let rec count xs acc = 
