@@ -40,7 +40,7 @@ let rec del_even = function
 | head :: tail -> del_even tail
 | list -> list
 
-//printfn "Извлечение нечетных значений"
+//printfn "Извлечение четных значений"
 //printfn "%A" (del_even emptyList) 
 //printfn "%A" (del_even list1) 
 //printfn "%A" (del_even list2) 
