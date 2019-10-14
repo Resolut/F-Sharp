@@ -12,16 +12,26 @@ let rec create k =
 //printfn "%A" (create 4)
 //printfn "%A" (create 9)
 
+// 34.1
+let rec upto n =
+    let rec count = function
+        | m when m = n -> [n]
+        | m -> m :: count (m + 1) 
+    count 1
 
 //нерабочий код
 let rec allSubsets n k = 
-    let rec sub1 elem =
-        match elem with
-        | elem when elem < k -> sub1 (elem+1)
-        | elem -> set[create elem;create elem]
-    sub1 0
+    let startList = upto k
 
-printfn "%A" (allSubsets 6 3)
+    let rec sub_set lst acc=
+        match lst, acc with
+        | (h::t), acc when acc > 1  -> [h::t] @ sub_set (h::t) (acc-1)
+        | (h::t), acc -> [h::t] 
+        | [], acc -> [[]]
+    sub_set startList n
+
+printfn "%A" (allSubsets 5 2)
+printfn "%A" (allSubsets 5 3)
 
 
 System.Console.ReadKey() |> ignore
