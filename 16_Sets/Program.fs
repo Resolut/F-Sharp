@@ -25,8 +25,8 @@ let rec allSubsets n k =
 
     let rec sub_set lst acc=
         match lst, acc with
-        | (h::t), acc when acc > 1  -> [h::t] @ sub_set (h::t) (acc-1)
-        | (h::t), acc -> [h::t] 
+        | (h::t), acc when acc > 1  -> [h::t] @ sub_set (h::[t.Head+1]) (acc-1)
+        | (h::t), acc -> [h::t]
         | [], acc -> [[]]
     sub_set startList n
 
