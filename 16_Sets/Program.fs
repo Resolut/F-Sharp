@@ -21,14 +21,15 @@ let rec upto n =
 
 //нерабочий код
 let rec allSubsets n k = 
-    let startList = upto k
-
+    let startList = upto k // создание начального списка
+    // TODO: написать функцию для изменения списка 
     let rec sub_set lst acc=
         match lst, acc with
-        | (h::t), acc when acc > 1  -> [h::t] @ sub_set (h::[t.Head+1]) (acc-1) // TODO: попробовать манипулировать через tail.Head
+        | (h::t), acc when acc > 0  -> [h::t] @ sub_set (h::[t.Head+1]) (acc-2)  
         | (h::t), acc -> [h::t]
         | [], acc -> [[]]
     sub_set startList n
+    // TODO: преобразование списка в множество
 
 printfn "%A" (allSubsets 5 2)
 printfn "%A" (allSubsets 5 3)
