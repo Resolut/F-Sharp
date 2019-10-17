@@ -5,6 +5,6 @@ let try_find key m =
     let rec sub_try lst =
         match lst with
         | [] -> None
-        | (k1,v1)::(tail) when k1 = key -> Some(v1) 
-        | (k1,v1)::(tail)-> sub_try tail
+        | (k1,v1)::tail when k1 = key -> Some(v1) 
+        | (k1,v1)::tail-> sub_try tail
     sub_try lst
