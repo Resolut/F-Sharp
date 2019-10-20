@@ -37,6 +37,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "16_Sets", "16_Sets\16_Sets.
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "17_Maps", "17_Maps\17_Maps.fsproj", "{6FBE615A-EB24-49E6-858C-79815708CE08}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "18_Imperative_Programming", "18_Imperative_Programming\18_Imperative_Programming.fsproj", "{3C91CDC6-2A69-463F-BC5C-1D9BFAF87A31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{6FBE615A-EB24-49E6-858C-79815708CE08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FBE615A-EB24-49E6-858C-79815708CE08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FBE615A-EB24-49E6-858C-79815708CE08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C91CDC6-2A69-463F-BC5C-1D9BFAF87A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C91CDC6-2A69-463F-BC5C-1D9BFAF87A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C91CDC6-2A69-463F-BC5C-1D9BFAF87A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C91CDC6-2A69-463F-BC5C-1D9BFAF87A31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
