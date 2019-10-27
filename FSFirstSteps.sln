@@ -41,6 +41,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "18_Imperative_Programming",
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "19_Lazy_Computing_n_Continuations", "19_Lazy_Computing\19_Lazy_Computing_n_Continuations.fsproj", "{65A94639-FF25-49D1-A355-E62DAFC27094}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "20_Lazy_Sequences", "20_Lazy_Sequences\20_Lazy_Sequences.fsproj", "{FDB401DF-36EF-4DD6-A973-E8E8507A9D76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{65A94639-FF25-49D1-A355-E62DAFC27094}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65A94639-FF25-49D1-A355-E62DAFC27094}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65A94639-FF25-49D1-A355-E62DAFC27094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB401DF-36EF-4DD6-A973-E8E8507A9D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB401DF-36EF-4DD6-A973-E8E8507A9D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB401DF-36EF-4DD6-A973-E8E8507A9D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB401DF-36EF-4DD6-A973-E8E8507A9D76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
