@@ -3,7 +3,7 @@ let fac_seq =
     let factorial n = 
         let rec f x a = seq {
             if x <= 1 then yield a 
-            else yield! f (x - 1) (a * x) } //   
+            else yield! f (x - 1) (a * x) } // wrong line   
         f n 1 
     factorial 
 
