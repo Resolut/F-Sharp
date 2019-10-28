@@ -1,4 +1,6 @@
-﻿type 'a cell = Nil | Cons of 'a * Lazy<'a cell>
+﻿// 51.3 
+
+type 'a cell = Nil | Cons of 'a * Lazy<'a cell>
 
 let hd (s : 'a cell) : 'a =
   match s with
@@ -19,8 +21,9 @@ let tl (s : 'a cell) : Lazy<'a cell> =
 //        | h::t, count -> inner t (count + 1)
 //    inner lst 0
 
-// 51.3 функция nth: (s : 'a cell) -> (n : int) -> 'a
+// функция nth: (s : 'a cell) -> (n : int) -> 'a
 // возвращает n-й (n >= 0) вычисленный элемент бесконечного списка
+
 //let rec nth (s : 'a cell) (n : int) : 'a =
 //    let rec inner lst count = 
 //        match lst, count with
