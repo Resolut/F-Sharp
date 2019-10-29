@@ -35,15 +35,17 @@ let tl (s : 'a cell) : Lazy<'a cell> =
 let rec nth (s : 'a cell) (n : int) : 'a =
     let rec inner (lst : 'a cell) (count : int) = 
         match lst with
-        Nil -> Nil
+        | Nil -> hd lst
         | Cons (hd,tl) ->
             if count = n then hd
-            else (inner (tl.Force()) (count + 1))
+            else inner (tl.Force()) (count + 1)
     inner s 0
 
 let rec nat (n:int) : 'a cell = Cons (n, lazy(nat(n+1)))
 let n0 = nat 0
+let n1 = Nil
 
-printfn "%A" (nth n0 3000)
+printfn "%A" (nth n0 30000)
+printfn "%A" (nth n1 0) // Exception hd
 
 System.Console.ReadKey()|> ignore
